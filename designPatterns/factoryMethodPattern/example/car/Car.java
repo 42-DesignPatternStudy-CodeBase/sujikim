@@ -2,7 +2,7 @@ package factoryMethodPattern.example.car;
 
 public abstract class Car {
 
-    String productName;
+    protected String productName;
     
     public String toString() {
         return productName;

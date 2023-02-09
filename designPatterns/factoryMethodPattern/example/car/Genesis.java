@@ -1,9 +1,8 @@
 package factoryMethodPattern.example.car;
 
-public class Genesis extends HyundaiCar {
+public class Genesis extends Car {
 
     public Genesis() {
-        this.productName = HyundaiCar.GENESIS;
+        productName = CarName.GENESIS;
     }
-    
 }
