@@ -1,4 +1,4 @@
-public class HyundaiCar extends Car {
+public final class CarName {
     
     public static final String SONATA = "Sonata";
     public static final String GRANDEUR = "Grandeur";

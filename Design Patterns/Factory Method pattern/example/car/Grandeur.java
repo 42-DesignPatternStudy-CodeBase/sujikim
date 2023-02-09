@@ -1,7 +1,6 @@
-public class Grandeur extends HyundaiCar {
+public class Grandeur extends Car {
 
     public Grandeur() {
-        this.productName = HyundaiCar.GRANDEUR;
+        productName = CarName.GRANDEUR;
     }
-    
 }

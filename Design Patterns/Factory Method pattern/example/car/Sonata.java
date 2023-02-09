@@ -1,6 +1,6 @@
-public class Sonata extends HyundaiCar {
+public class Sonata extends Car {
 
     public Sonata() {
-        this.productName = HyundaiCar.SONATA;
+        productName = CarName.SONATA;
     }
 }
