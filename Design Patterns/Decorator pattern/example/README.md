@@ -10,7 +10,7 @@ EtiopiaAmericano Adding Milk Adding Mocha Syrup Adding WhippedCream
 ```
 
 ## 과제 해결
-![coffee 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/week1/Design%20Patterns/Decorator%20pattern/example/Coffee.jpg?raw=true)
+![coffee 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/Design%20Patterns/Decorator%20pattern/example/Coffee.jpg?raw=true)
 - 상속과 구성, 데코레이터 패턴을 섞어서 사용
 
 ### 과제에서 중점적으로 고민했던 부분
