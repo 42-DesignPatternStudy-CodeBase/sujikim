@@ -1,34 +1,30 @@
 package strategyPattern.example.dao;
 
-import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.IOException;
+import java.util.Properties;
 
 public class _Main {
 
-    public static UserInfoDao getUserInfoDaoFromPropertyFile() throws FileNotFoundException {
-        String path = System.getProperty("user.dir");
+    public static UserInfoDao getUserInfoDaoFromPropertyFile() throws FileNotFoundException, IOException {
+        String path = "/designPatterns/strategyPattern/example/dao/db.properties";
+        System.err.println(System.getProperty("user.dir"));
+        FileInputStream fileStream = new FileInputStream(System.getProperty("user.dir") + path);
 
-        File file = new File(path + "/database/db.properties");
-        Scanner scanner = new Scanner(file);
+        Properties properties = new Properties();
+        properties.load(fileStream);
+        String dbType = properties.getProperty("DBTYPE");
 
-        if (scanner.hasNextLine()) {
-            String[] dbProperty = scanner.nextLine().split("=");
-            scanner.close();
-            if (!dbProperty[0].equals("DBTYPE") || dbProperty.length != 2)
-                throw new FileNotFoundException();
-            
-            if (dbProperty[1].equals("ORACLE"))
-                return new UserInfoOracleDao();
-            else if (dbProperty[1].equals("MYSQL"))
-                return new UserInfoMySqlDao();
-            else if (dbProperty[1].equals("MSSQL"))
-                return new UserInfoMySqlDao();
-        }
-        throw new FileNotFoundException(); 
+        if (dbType.equals("ORACLE"))
+            return new UserInfoOracleDao();
+        else if (dbType.equals("MYSQL"))
+            return new UserInfoMySqlDao();
+        else 
+            return new UserInfoMySqlDao();
     }
 
-    public static void main(String[] args) throws FileNotFoundException{
+    public static void main(String[] args) throws IOException {
 
         UserInfoDao userInfoDao = getUserInfoDaoFromPropertyFile();
         
