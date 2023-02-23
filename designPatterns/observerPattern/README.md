@@ -8,8 +8,8 @@
 ![observer pattern image from refactoring.guru](https://refactoring.guru/images/patterns/diagrams/observer/structure-2x.png)
 - Subject는 상태가 변할 때마다 통지할 Observer 목록을 가지고 있음
 - 갱신 프로토콜은 로직에 따라 push / pull 모델 선택 가능
-    - push : 주체가 변경되면 모든 데이터를 감시자에 전달
-    - pull : 주체는 최소한의 정보만, 감시자가 필요한 상세 정보를 요청
+    - push : 주체가 변경되면 모든 데이터를 옵저버에 전달
+    - pull : 옵저버가 필요할 때마다 주기적으로 주체가 변경되었는지 체크
 
 ## 다른 이름
 종속자 Dependent, 게시-구독 Publish-Subscribe
