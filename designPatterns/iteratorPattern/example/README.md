@@ -1,11 +1,13 @@
 ## 주어진 과제
+
 다음 코드를 참고해서 Iterator 인터페이스를 구현한 BookShelfIterator를 만들기
 
 ### 추가 과제
+
 - 역순으로 순회하는 ReverseIterator 만들기
 - 다양한 Iterator가 만들어 지는 Factory를 만들어 적용해보기
 
-``` java
+```java
 public interface Iterator {
   public abstract boolean hasNext();
     public abstract Object next();
@@ -23,7 +25,7 @@ public class Book {
   }
   public String getName() {
     return name;
-  } 
+  }
 }
 
 public static void main(String[] args) {
@@ -49,10 +51,13 @@ public abstract class Factory {
 ```
 
 ## 과제 해결
-![bookShelf 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/Design%20Patterns/iteratorPattern/example/BookShelf.jpg?raw=true)
+
+![bookShelf 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/designPatterns/iteratorPattern/example/BookShelf.jpg?raw=true)
+
 - 자료구조에 따라 달라질 수 있는 순회방식에 대한 내용은 구현체에서 세부 설명
 
 ### 과제에서 중점적으로 고민했던 부분
-- ReverseIterator를 Interator 처럼 별도의 인터페이스로 두어야 하는지? 
-    - 순회방식이 다른 클래스 일뿐 별도의 메소드를 가지지 않았음
-    - Iterator를 상속한 별개의 클래스로 처리
+
+- ReverseIterator를 Interator 처럼 별도의 인터페이스로 두어야 하는지?
+  - 순회방식이 다른 클래스 일뿐 별도의 메소드를 가지지 않았음
+  - Iterator를 상속한 별개의 클래스로 처리

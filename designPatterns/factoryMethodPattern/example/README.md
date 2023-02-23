@@ -43,10 +43,9 @@ public class CarTest {
 
 ## 과제 해결
 
-![Car 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/Design%20Patterns/factoryMethodPattern/example/Car.jpg?raw=true)
+![Car 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/designPatterns/factoryMethodPattern/example/Car.jpg?raw=true)
 
 - if else문 대신 상속으로 해결
-
 
 ### 과제에서 중점적으로 고민했던 부분
 

@@ -44,8 +44,7 @@ public class Main {
 ```
 
 ## 과제 해결
-
-![Player 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/Design%20Patterns/observerPattern/example/Number.jpg?raw=true)
+![Player 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/designPatterns/observerPattern/example/Number.jpg?raw=true)
 
 - 새로운 숫자가 생성되면 옵저버 리스트를 순회하면서 update() 함수를 호출
 - 각 옵저버들은 새로 통지받은 숫자를 각각의 방식으로 표현하도록

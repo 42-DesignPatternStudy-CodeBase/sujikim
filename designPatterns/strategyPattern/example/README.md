@@ -78,7 +78,7 @@ public class StudentTest {
 
 ## 과제 1 해결
 
-![Grade Strategy 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/Design%20Patterns/strategyPattern/example/Grade.jpg?raw=true)
+![Grade Strategy 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/designPatterns/strategyPattern/example/Grade.jpg?raw=true)
 
 - Subject 내부의 majorCode 변수를 없애고 client에서 결정하는 전략에 따라 성적을 반환할 수 있도록
 
@@ -128,7 +128,7 @@ public class UserInfo {
 
 ## 과제 2 해결
 
-![DAO Strategy 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/Design%20Patterns/strategyPattern/example/DAO.jpg?raw=true)
+![DAO Strategy 클래스 다이어그램](https://github.com/notusing11/java_design_pattern_study/blob/main/designPatterns/strategyPattern/example/DAO.jpg?raw=true)
 
 - 최초 실행시 파일을 열어 UserInfoDao를 반환받도록
 
