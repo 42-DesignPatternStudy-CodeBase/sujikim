@@ -21,6 +21,7 @@ public class Student {
 
     public void showGradeInfo() {
         for (Subject subject : subjectList) {
+            System.out.print("학생 " + studentName + "(" + studentID + ") 의 ");
             System.out.print("학생 " + studentName + "의 ");
             System.out.print(subject.getName() + " 과목");
             System.out.print("성적은 " + subject.getScorePoint() + "점 이고, ");

@@ -9,4 +9,7 @@ public abstract class CodimentDecorator extends Coffee {
         this.coffee = coffee;
         this.name = coffee.name;
     }
+    public Coffee getCoffee () {
+        return coffee;
+    }
 }

@@ -11,5 +11,10 @@ public class _Main {
         weatherData.setMesurements(80, 65, 30.4f);
         weatherData.setMesurements(82, 70, 29.2f);
         weatherData.setMesurements(78, 90, 30.1f);
+
+
+        currentDisplay.display();
+        statisticsDisplay.display();
+        forecastDisplay.display();
     }
 }
