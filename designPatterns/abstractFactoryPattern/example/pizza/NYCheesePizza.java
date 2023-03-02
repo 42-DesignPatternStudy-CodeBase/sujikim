@@ -1,5 +1,5 @@
-package factoryMethodPattern.example.pizza;
-// concrete product
+package abstractFactoryPattern.example.pizza;
+
 public class NYCheesePizza extends Pizza {
     @Override
     public void displayMakingProcess() {
